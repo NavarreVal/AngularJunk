@@ -1,0 +1,51 @@
+body {
+    background-color: navajowhite;
+}
+
+#addSum {
+    background-color: darkgreen;
+    padding: 25px;
+    padding-top: .15px;
+    border: 5px solid black;
+    width: 150px;
+    display: inline-block;
+}
+
+#subtract {
+    background-color: maroon;
+    padding: 25px;
+    padding-top: .15px;
+    border: 5px solid black;
+    width: 150px;
+    display: inline-block;
+}
+
+#multCalc {
+    background-color: #FAFAE6;
+    padding: 25px;
+    padding-top: .15px;
+    border: 5px solid black;
+    width: 150px;
+    display: inline-block;
+}
+
+#total {
+    background-color: darkgoldenrod;
+    padding: .25px;
+    border: 5px solid black;
+    height: 55px;
+    width: 200px;
+    margin-top: 5px;
+}
+
+#total h3 {
+    display: inline-block;
+    position: absolute;
+}
+
+#total h4 {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 19px 55px ;
+}
