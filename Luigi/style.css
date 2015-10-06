@@ -1,0 +1,73 @@
+/**********/
+/** Body **/
+/**********/
+
+@font-face {
+    font-family: sm256;
+    src: url(SuperMario256.ttf);
+}
+
+body {
+    color: red;
+    font-family: sm256;
+}
+
+#yellowTitle {
+    height: 100px;
+    background-color: yellow;
+}
+
+#yellowTitle h1 {
+    font-size: 5em;
+    padding: 25px;
+}
+
+#redPic {
+    height: 300px;
+    background-color: red;
+}
+
+#redPic img {
+    display: block;
+    margin: auto;
+}
+
+#blank {
+    height: 200px;
+    background-color: white;
+}
+
+#aboutMe {
+    height: 200px;
+    background-color: white;
+    width: 270px;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+#aboutMe p {
+    font-family: Times New Roman;
+    font-weight: bolder;
+}
+
+#yellowFoot {
+    height: 55px;
+    background-color: yellow;
+}
+
+#yellowFoot img {
+    float: right;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/**************/
+/**  Footer  **/
+/**************/
+
+footer {
+    font-size: 12px; 
+    clear: both;
+}
+
