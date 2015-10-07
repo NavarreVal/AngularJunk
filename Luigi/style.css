@@ -32,25 +32,27 @@ body {
     margin: auto;
 }
 
-#blank {
-    height: 200px;
-    background-color: white;
-}
-
 #aboutMe {
     height: 200px;
+    width: 100%;
     background-color: white;
-    width: 270px;
     text-align: center;
     font-size: 1.75em;
+    display: inline-block;
 }
 
 #aboutMe p {
     font-family: Times New Roman;
     font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
 }
 
 #yellowFoot {
+    display: block;
     height: 55px;
     background-color: yellow;
 }
