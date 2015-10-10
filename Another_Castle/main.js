@@ -11,9 +11,11 @@ var player = {
 //    ["Big", "Small", "Powered Up", "Dead"],
     star: false,
     
-    setName: function() {
-        var namePicked = "Mario";
-    },
+    setName: "Mario",
+    
+//    function() {
+//        var namePicked = "Mario";
+//    },
    
     gotHit: function() {
         if (this.status == "Powered Up") {
@@ -26,7 +28,7 @@ var player = {
     },
       
     gameActive: function() {
-        if (this.status = "Dead") {
+        if (this.status == "Dead") {
             this.gameActive = false;
         } else {
             this.gameActive = true;
@@ -41,7 +43,7 @@ var player = {
 
     addCoin: function() {
         if (true) {
-            this.totalCoins(parseInt(totalCoins)++); {
+            this.totalCoins++; {
             }
         }
     },
@@ -54,6 +56,17 @@ var player = {
     }
 };
     
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (2 - 0 + 1) + 0);
+function getRandomNum(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;   
 }
+
+var randomInt = getRandomNum(0, 2)
+    if (randomInt === 0) {
+        player.gotHit();
+    } else if (randomInt === 1){
+        player.gotPowerup();
+    } else {
+        player.addCoin();
+    };
+
+player.print();
