@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngModel">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular ng-model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div ng-controller="MainController" class="container">
+
+        <div id="one" class="well col-md-4">
+            <h1>Child Name &nbsp<input ng-model="children"></h1>
+
+            <h2>{{ children }}</h2>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

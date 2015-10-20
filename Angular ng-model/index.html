@@ -9,59 +9,64 @@
 </head>
 
 <body>
-    
-    <div ng-controller="MainController">
-       
-        <div id="one" class="well">       
-            <h1>Child One &nbsp<input ng-model="children.one"></h1>
-            <h2>{{ children.one }}</h2>  
-        </div> 
-        
-        <div id="two" class="well">
-            <h1>Child Two &nbsp<input ng-model="children.two"></h1>
-            <h2>{{ children.two }}</h2>
-        </div>
-        
-        <div id="three" class="well">
-            <h1>Child Three &nbsp<input ng-model="children.three"></h1>
-            <h2>{{ children.three }}</h2>
-            
- <!--   Children updater-->
-        <div id="buttonUpdater" class="well">
-       
-            <h1>{{ children.one }}</h1>
-            <h1>{{ children.two }}</h1>
 
-            One: <input type="text" ng-model="children.one"><br>
-            Two: <input type="text" ng-model="children.two">
-        
+    <div ng-controller="MainController" class="container">
+        <div class="row">
+
+            <div id="one" class="well col-md-4">
+                <h1>Child One &nbsp<input ng-model="children.one"></h1>
+
+                <h2>{{ children.one }}</h2>
+            </div>
+
+            <div id="two" class="well col-md-4">
+                <h1>Child Two &nbsp<input ng-model="children.two"></h1>
+
+                <h2>{{ children.two }}</h2>
+            </div>
+
+            <div id="three" class="well col-md-4">
+                <h1>Child Three &nbsp<input ng-model="children.three"></h1>
+
+                <h2>{{ children.three }}</h2>
+            </div>
+
+            <!--   Children updater-->
+            <div id="buttonUpdater" class="well col-md-4">
+
+                <h1>{{ children.one }}</h1>
+
+                <h1>{{ children.two }}</h1> One:
+                <input type="text" ng-model="children.one">
+                <br> Two:
+                <input type="text" ng-model="children.two">
+
+            </div>
+
+            <!--   button updater-->
+            <div class="well col-md-4">
+
+                <h1>{{ name }}</h1>
+                <input type="text" ng-model="newName">
+                <button ng-click="updateName(newName)">Update name</button>
+
+            </div>
+
+            <!-- People Array -->
+
+            <div ng-repeat="person in people" class="well col-md-4">
+                <h1>Name: {{ person.name }}</h1>
+
+                <p>Age: {{ person.age }}</p>
+                <ul>
+                    <li ng-repeat="kid in person.kids">{{ kid.name }}'s favorite toy is {{ kid.favToy }}</li>
+
+                </ul>
+
+            </div>
         </div>
-    
-        </div>
-    
- <!--   button updater-->
-    <div class="well">
-       
-        <h1>{{ name }}</h1>
-        <input type="text" ng-model="newName">
-        <button ng-click="updateName(newName)">Update name</button>
-        
     </div>
-    
-<!-- People Array -->
-      
-      <div ng-repeat="person in people" class="well">
-          <h1>Name: {{ person.name }}</h1>
-          <p>Age: {{ person.age }}</p>
-          <ul>
-              <li ng-repeat="kid in person.kids">{{ kid.name }}'s favorite toy is {{ kid.favToy }}</li>
-              
-          </ul>
-          
-      </div>
-            
-    </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="main.js"></script>
 </body>

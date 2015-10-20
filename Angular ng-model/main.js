@@ -1,22 +1,22 @@
 var app = angular.module('ngModel', []);
 
 
-app.controller('MainController', function($scope) {
+app.controller('MainController', function ($scope) {
 
     $scope.children = {
         one: "",
         two: "",
         three: "",
     }
-    
-//Name Updater//
+
+    //Name Updater//
     $scope.name = "bob";
-    
-    $scope.updateName = function(newName) {
+
+    $scope.updateName = function (newName) {
         $scope.name = newName;
     }
-    
-//People Array//
+
+    //People Array//
     $scope.people = [
         {
             name: "Bob",
@@ -38,8 +38,9 @@ app.controller('MainController', function($scope) {
             name: "Charles",
             age: 27
         },
-        {name: "Sariah",
-         age: 26
+        {
+            name: "Sariah",
+            age: 26
         }
     ]
 
