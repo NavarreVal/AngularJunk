@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="refresher">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Refresher</title>
+</head>
+
+<body>
+    
+    <div ng-controller="MainController">
+               
+        <input id="numberOne" ng-model="numberOne">
+        <input id="numberTwo" ng-model="numberTwo">
+        
+        <button ng-click="addTogether()">Sum</button>
+        
+        <h3 id="result">Result</h3>
+        <h3 id="total" ng-model="total">{{ math.total }}</h3>
+        
+    </div>
+    
+    <div ng-controller="SecondController">
+               
+        <input id="numberOne" ng-model="numberOne">
+        <input id="numberTwo" ng-model="numberTwo">
+        
+        <button ng-click="multTogether()">Product</button>
+        
+        <h3 id="result">Result</h3>
+        <h3 id="total" ng-model="total">{{ math.total }}</h3>
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

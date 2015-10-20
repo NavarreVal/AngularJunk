@@ -1,0 +1,10 @@
+.remove {
+    width: 250px;
+    height: auto;
+    min-height: 70px;
+    font-size: 25px;
+    text-align: left;
+}
+
+#item {
+}

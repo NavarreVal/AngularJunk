@@ -1,0 +1,11 @@
+#in {
+    display: inline-block;
+    margin: 20px;
+}
+
+#imgSub {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+}

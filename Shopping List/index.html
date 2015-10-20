@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shoppingList">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Shopping List</h1>
+    <div ng-controller="MainController">
+        <input id="addText" type="text" ng-model="newItem" ><button id="add" ng-click="updateList(newItem)">Add</button>
+        
+        <ul>
+            <li ng-repeat="item in list track by $index" id="item"><button type="button" ng-click="rmvBtn(item)" class="remove" value="x"/>{{ item }}</li>
+        </ul>
+        
+        
+    </div>
+    
+    
+    
+    
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
