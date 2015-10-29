@@ -17,14 +17,12 @@ app.controller('MainController', function($scope) {
         $scope.list.splice(index, 1);
     }
     
+//    var theList = $scope.list;
+    
     localStorage.setItem('savedList', JSON.stringify($scope.list));
     
-    var savedList = $scope.savedList = JSON.parse(localStorage.getItem('savedList')) || [];
+    var savedList = JSON.parse(localStorage.getItem('savedList'));
     
-    $scope.popSavedList = function(savedItem) {
-        $scope.savedList.push(savedItem);
-        localStorage.setItem(JSON.stringify('savedList', $scope.savedList));   
-    }
 });
 
 $("#addText").keyup(function(event){

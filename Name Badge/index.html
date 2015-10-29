@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Badge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Name Badge Form</h1>
+        </div>
+    </div>
+-->
+
+    <div class="col-md-2"></div>
+
+<!--********************************************************-->
+<!--*********************  Badge Form  *********************-->
+<!--********************************************************-->
+    <div ng-controller="MainController">
+        <form class="container col-md-8">
+            <fieldset>
+                <div id="top" class="row">
+                    <div class="col-md-6">
+                        <input id="fn" type="text" ng-model="newFn" class="form-control" placeholder="First Name"></input>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="ln" type="text" ng-model="newLn" class="form-control" placeholder="Last Name"></input>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-6">
+                        <input id="email" type="email" ng-model="newEmail" class="form-control" placeholder="Email"></input>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="pob" type="text" ng-model="newPob" class="form-control" placeholder="Place of Birth"></input>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-md-6">
+                        <input id="phone" type="tel" ng-model="newPhone" class="form-control" placeholder="Phone"></input>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="food" type="text" ng-model="newFood" class="form-control" placeholder="Favorite Food"></input>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <div class="col-md-12">
+                        <textarea id="notes" type="text" ng-model="newNotes" class="form-control" rows="4" placeholder="Tell us about yourself"></textarea>
+                    </div>
+                </div>
+
+<!--***********************************************************-->
+<!--*********************  Submit Button  *********************-->
+<!--***********************************************************-->
+                <div class="form-actions col-md-12 btn-lg">
+                    <button id="add" ng-model="newBadge" ng-click="updateList(newFn, newLn, newEmail, newPob, newPhone, newFood, newNotes)">Submit</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="col-md-2"></div>
+
+<!--********************************************************-->
+<!--*********************  Badge List  *********************-->
+<!--********************************************************-->
+
+    <div ng-controller="MainController" class="newForm">
+        <div class="container col-md-4">
+            <div id="top" class="row">
+                <div class="col-md-6">
+                    <p ng-repeat="newFn in badges track by $index" id="newFn">{{ newFn }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p>{{ badges.newLn }}</p>
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="col-md-6">
+                    <p>{{ badges.newEmail }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p>{{ badges.newPob }}</p>
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="col-md-6">
+                    <p>{{ badges.newPhone }}</p>
+                </div>
+                <div class="col-md-6">
+                    <p>{{ badges.newFood }}</p>
+                </div>
+                    <br>
+                    <br>
+                    <br>
+                <div class="col-md-12">
+                    <p>{{ badges.newLn }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

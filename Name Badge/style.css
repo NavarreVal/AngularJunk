@@ -1,0 +1,18 @@
+.jumbotron {
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid black;
+}
+
+#top {
+    margin: 5px;
+    padding: 15px;
+}
+
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
