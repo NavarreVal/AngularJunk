@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FavState">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pages/home.css">
+    <link rel="stylesheet" href="pages/about.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--*************
+**  Jumbotron  **
+**************-->
+    <header>
+        <div class="Jumbotron">
+            <div class="container">
+                <h1>Favorite State</h1>
+                <p>ng-route exercise</p>
+            </div>
+        </div>
+    </header>
+
+    <!--**********
+**  Navbar  **
+***********-->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1>The State of Jefferson</h1>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul>
+                    <li><a href="#/">Home</a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="#/love">Love</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <!--************
+**  Contents **
+*************-->
+    <div ng-view></div>
+
+    <hr>
+
+    <!--**********
+**  Footer  **
+***********-->
+    <footer>&copy; J Navarre Valdivieso</footer>
+
+    <!--**************
+**  JavaScript  **
+***************-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//code.angularjs.org/1.4.5/angular-route.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

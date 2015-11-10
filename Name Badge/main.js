@@ -25,8 +25,14 @@ app.controller('MainController', function($scope) {
   
 });
     
-$("#addText").keyup(function(event){
-    if(event.keyCode == 13){
-        $("#add").click();
-    }
-});
+//$("#fn").keyup(function(event){
+//    if(event.keyCode == 13){
+//        $("#add").click();
+//    }
+//});
+
+//ng-if will keep it from rendering 
+//ng-show is a Boolean
+//change the boolean with the 'submit' button.
+//<h1> {{ someText }}</h1>
+//<input type="text" ng-model="someText">

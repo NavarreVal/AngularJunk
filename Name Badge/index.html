@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="nameBadge">
 
 <head>
     <meta charset="UTF-8">
@@ -63,8 +63,9 @@
 <!--***********************************************************-->
 <!--*********************  Submit Button  *********************-->
 <!--***********************************************************-->
+               
                 <div class="form-actions col-md-12 btn-lg">
-                    <button id="add" ng-model="newBadge" ng-click="updateList(newFn, newLn, newEmail, newPob, newPhone, newFood, newNotes)">Submit</button>
+                    <button id="add" ng-model="newFn" ng-click="updateList(newFn, newLn, newEmail, newPob, newPhone, newFood, newNotes)">Submit</button>
                 </div>
 
             </fieldset>
@@ -80,8 +81,9 @@
     <div ng-controller="MainController" class="newForm">
         <div class="container col-md-4">
             <div id="top" class="row">
+<!--               <li ng-repeat="item in list track by $index" id="item"><button type="button" ng-click="rmvBtn(item)" class="remove" value="x"/>{{ item }}</li>-->
                 <div class="col-md-6">
-                    <p ng-repeat="newFn in badges track by $index" id="newFn">{{ newFn }}</p>
+                    <p ng-repeat="fn in newFn track by $index" id="fn">{{ fn }}</p>
                 </div>
                 <div class="col-md-6">
                     <p>{{ badges.newLn }}</p>

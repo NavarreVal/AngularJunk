@@ -17,12 +17,6 @@ app.controller('MainController', function($scope) {
         $scope.list.splice(index, 1);
     }
     
-//    var theList = $scope.list;
-    
-    localStorage.setItem('savedList', JSON.stringify($scope.list));
-    
-    var savedList = JSON.parse(localStorage.getItem('savedList'));
-    
 });
 
 $("#addText").keyup(function(event){
