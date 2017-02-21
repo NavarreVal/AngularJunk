@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+}
+
+#logo {
+    width: 9em;
+    display: block;
+    margin: auto;
+    transform-origin: 50% 100%;
+    transform: perspective(200px) rotateX(7deg);
+}
+
+#text {
+    position: absolute;
+    width: 12em;
+    bottom: 0;
+    left: 60%;
+    margin-left: -9em;
+    font-size: 350%;
+    color: yellow;
+    text-align: justify;
+    transform-origin: 50% 100%;
+    transform: perspective(200px) rotateX(7deg);
+}
+
+h2 {
+    text-align: center;
+    font-size: 100%;
+}
+
+p {
+    color: lightblue;
+    font-size: 65%;  
+    text-align: left;
+    margin-left: 3em;
+}
+
+#planet {
+    width: 100%;
+}
+
+footer {
+    float: right;
+    margin-right: 15px;
+}

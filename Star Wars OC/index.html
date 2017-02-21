@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Star Wars Opening Credits</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="starWars" ng-controller="mainCtrl">
+
+    <div class="container" id="text">
+        <img src="https://goo.gl/ccDvJE" id="logo">
+        <h2>{{ sw.title }}</h2><br>
+        <h1>{{ sw.opening_crawl }}</h1>
+        <p>Directed By: <br>&nbsp;&nbsp;{{ sw.director }}</p>
+        <p>Produced By: <br>&nbsp;&nbsp;{{ sw.producer }}</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="http://goo.gl/gOYDFH" id="planet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="main.js"></script>
+    
+    <footer><p>&copy; &nbsp; J. Navarre Valdivieso </p></footer>
+</body>
+</html>
