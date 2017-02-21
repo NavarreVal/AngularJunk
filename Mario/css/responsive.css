@@ -1,0 +1,32 @@
+@media screen and (min-width: 480px) {
+  
+  /******************************
+  TWO COLUMN LAYOUT
+  *******************************/
+  
+  #primary {
+    width: 50%;
+    float: left;
+  }
+  
+  #secondary {
+    width: 40%;
+    float: right;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.95em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 25px;
+  }
+    
+
+}
